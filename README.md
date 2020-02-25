@@ -1,7 +1,7 @@
 # Chemical Genomics demo
 
 ## Introduction
-This repository contains demo data and code to process and analyse Chemical Genomics experiments performed in the Ehrt Schnappinger lab (https://www.ehrtschnappingerlabs.org/). The experimental setup used was developed by the Broad Institute (https://www.nature.com/articles/s41586-019-1315-z). For the purposes of this demo, the data has been encoded to mask drug and strain names. The overarching goal of this experiment was to predict mechanisms of actions of anti-tuberculosis drugs using chemical-genetic interactions.
+This repository contains demo data and code to process and analyse Chemical Genomics experiments performed in the Ehrt Schnappinger lab (https://www.ehrtschnappingerlabs.org/). The experimental setup used was developed by the Broad Institute (https://www.nature.com/articles/s41586-019-1315-z). For the purposes of this demo, the data has been encoded to mask drug and strain names. The overarching goal of this experiment was to predict mechanism of actions of anti-tuberculosis drugs using chemical-genetic interactions.
 ## Details of experimental setup
 Each experiment consists of taking pools of M. tuberculosis depleted of essential targets and screening them against compound libraries to determine chemical genetic interactions. An overview of the experimental setup is as follows:
 
