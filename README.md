@@ -3,7 +3,7 @@
 ## Introduction
 This repository contains demo data and code to process and analyse Chemical Genomics experiments performed in the Ehrt Schnappinger lab (https://www.ehrtschnappingerlabs.org/). The experimental setup used was developed by the Broad Institute (https://www.nature.com/articles/s41586-019-1315-z). For the purposes of this demo, the data has been encoded to mask drug and strain names. The overarching goal of this experiment was to predict mechanism of actions of anti-tuberculosis drugs using chemical-genetic interactions.
 ## Details of experimental setup
-Each experiment consists of taking pools of M. tuberculosis depleted of essential targets and screening them against compound libraries to determine chemical genetic interactions. An overview of the experimental setup is as follows:
+Each experiment consists of taking pools of _M. tuberculosis_ depleted of essential targets and screening them against compound libraries to determine chemical genetic interactions. An overview of the experimental setup is as follows:
 
 1. Anti-mycobacterial drugs are pipetted at varying concentrations into 96 well plates, with each plate corresponding to one drug. For each drug, seven concentrations are used (0.125X MIC - 8X MIC) in addition to a no drug control (0.000x MIC). Each drug-MIC combination has six replicates. Details of this are recorded in the file 'HypoIII_all_drugs_encoded.csv' under the columns 'Dispensedwell', 'Dispensedrow', 'Dispensedcol'.
 2. Strain pools consist of ~400 M. tuberculosis strains, each containing an inducible depletion system targeting an essential gene. These are pipetted into drug plates. Simutaneously depletion is induced.
