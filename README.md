@@ -9,7 +9,7 @@ Each experiment consists of taking pools of _M. tuberculosis_ depleted of essent
 2. Strain pools consist of ~400 _M. tuberculosis_ strains, each containing an inducible depletion system targeting an essential gene. These are pipetted into drug plates. Simutaneously depletion of the target gene is induced.
 3. After the desired incubation time, optical density of the plates is recorded. Details of this are in `Raw_data/181120_HypoIII_Ods_encoded.xlsx` with the ODs under the column 'RawData'.
 4. Strains are harvested and PCR'ed to amplify the barcode-containing region. To enable multiplexing, different p5 indexes are used for each well, and different p7 indexes are used for each plate.
-5. Amplicons are submitted for Illumina sequencing. FASTQ files thus obtained are converted into counts file (code for this is not shown, since it was developed by Tom Ioerger (Texas A&M) and remains unpublished). 
+5. Amplicons are submitted for Illumina sequencing. FASTQ files thus obtained are converted into counts file (code for this is not shown, since it was developed by [Tom Ioerger (Texas A&M)](https://engineering.tamu.edu/cse/profiles/tioerger.html) and remains unpublished). 
 6. Each Illumina run generates a .counts file. This is a a tab delimited file containing demultiplexed counts for each p5-p7 (and therefore each plate-well) combination and for each strain in the mix. Refer to files within `Raw_data/Counts_files_encoded` for reference.
 
 ## Details of code provided
