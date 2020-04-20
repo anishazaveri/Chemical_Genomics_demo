@@ -6,7 +6,7 @@ This repository contains demo data and code to process and analyse Chemical Geno
 ## Motivation
 
 - Tuberculosis is a lung disease that causes the greatest number of deaths/year due to an infectious agent.
-- It is caused by the bacterium Mycobacterium tuberculosis
+- It is caused by the bacterium _Mycobacterium tuberculosis_
 - In 2018, the disease infected ~10 million people and caused ~1.5 million deaths
 - 20% of cases exhibit resistance to one or more drugs
 - Understanding the mechanism of action of new anti-TB drugs helps speed up drug discovery
