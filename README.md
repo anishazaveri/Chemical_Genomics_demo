@@ -17,13 +17,13 @@ We developed a chemical-genetic approach to predict the mechanism of action of a
 
 ## Overview and Goals
 
-The overarching goal of this project was to predict mechanism of actions of new drugs by using a library of strains with varying drug susceptibilities as inputs. 
+The overarching goal of this project was to predict mechanisms of action of new drugs by using a library of strains with varying drug susceptibilities as input. 
 
 `1-Overview_and_goals.ipynb` provides a detailed explanation of the format of the input data and the specific goals addressed by this dataset.
 
 `2-Clean_data.ipynb` processes counts_files to cleaned dataframes. Each step generates a folder with intermediate files under `Clean_data_outputs`
 
-`3-QC` performs several QC analysis on the processed data and specifically examines possible reasons behind missing datapoints
+`3-QC` performs several QC analyses on the processed data and examines possible reasons behind missing datapoints
 
 `4-Model_fitting.ipynb` uses the processed data to fit supervised machine learning models and describes methods for narrowing the number of features required for the analysis.
 
