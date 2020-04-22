@@ -1,7 +1,9 @@
 # Chemical Genomics demo
 
 ## Introduction
-This repository contains demo data and code to process and analyse Chemical Genomics experiments performed in the [Ehrt Schnappinger lab](https://www.ehrtschnappingerlabs.org/). The experimental setup used was developed by the Broad Institute (https://www.nature.com/articles/s41586-019-1315-z). For the purposes of this demo, the data has been encoded to mask drug and strain names. 
+This repository contains demo data and code to process and analyse Chemical Genomics experiments performed in the [Ehrt Schnappinger lab](https://www.ehrtschnappingerlabs.org/). The experimental setup used was developed by the Broad Institute (https://www.nature.com/articles/s41586-019-1315-z). 
+
+For the purposes of this demo, the data has been encoded to mask drug and strain names. 
 
 ## Motivation
 
@@ -13,15 +15,20 @@ This repository contains demo data and code to process and analyse Chemical Geno
 
 We developed a chemical-genetic approach to predict the mechanism of action of a new drug
 
-## Details of code provided
+## Overview and Goals
 
-The counts files act as inputs for the code provided in this repo. `HypoIII-Counts_to_FC-For_git.ipynb` processes Counts_files to cleaned dataframes, while performing several steps of QC in between. Each step generates a folder under `Analysis`. 
+The overarching goal of this project was to predict mechanism of actions of new drugs by using a library of strains with varying drug susceptibilities as inputs. 
 
-The files under folders in `Analysis` act as inputs to the `EDA.ipynb` file. This file is used to examine the quality of the overall data and explore possible reasons for poor quality PCRs.
+`1-Overview_and_goals.ipynb` provides a detailed explanation of the format of the input data and the specific goals addressed by this dataset.
 
-Finally the filtered data are fit to a logistic regression model to explore if strain depletion patterns can predict drug classes. Outputs of this are two confusion matrices and a file with the coefficients of the logistic regression classifier(found under `Analysis/9-Logistic_regression/HypoIII`)
+`2-Clean_data.ipynb` processes counts_files to cleaned dataframes. Each step generates a folder with intermediate files under `Clean_data_outputs`
 
-## Details of experimental setup
+`3-QC` performs several QC analysis on the processed data and specifically examines possible reasons behind missing datapoints
+
+`4-Model_fitting.ipynb` uses the processed data to fit supervised machine learning models and describes methods for narrowing the number of features required for the analysis.
+
+
+## Details of experimental setup used to generate input data
 Each experiment consists of taking pools of _M. tuberculosis_ depleted of essential targets and screening them against compound libraries to determine chemical genetic interactions. An overview of the experimental setup is as follows:
 
 1. Anti-mycobacterial drugs are pipetted at varying concentrations into 96 well plates, with each plate corresponding to one drug. For each drug, seven concentrations are used (0.125X MIC - 8X MIC) in addition to a no drug control (0.000x MIC). Each drug-MIC combination has six replicates. Details of this are recorded in `Raw_data/HypoIII_all_drugs_encoded.csv` under the columns 'Dispensedwell', 'Dispensedrow', 'Dispensedcol'.
