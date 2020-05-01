@@ -15,7 +15,7 @@ For the purposes of this demo, the data has been encoded to mask drug and strain
 
 We developed a chemical-genetic approach to predict the mechanism of action of a new drug
 
-## Overview and Goals
+## Overview
 
 The overarching goal of this project was to predict mechanisms of action of new drugs by using a library of strains with varying drug susceptibilities as input. 
 
@@ -28,7 +28,7 @@ The overarching goal of this project was to predict mechanisms of action of new 
 `4-Model_fitting.ipynb` uses the processed data to fit supervised machine learning models and describes methods for narrowing the number of features required for the analysis.
 
 
-## Details of experimental setup used to generate input data
+## Details of the experimental setup used to generate input data
 Each experiment consists of taking pools of _M. tuberculosis_ depleted of essential targets and screening them against compound libraries to determine chemical genetic interactions. An overview of the experimental setup is as follows:
 
 1. Anti-mycobacterial drugs are pipetted at varying concentrations into 96 well plates, with each plate corresponding to one drug. For each drug, seven concentrations are used (0.125X MIC - 8X MIC) in addition to a no drug control (0.000x MIC). Each drug-MIC combination has six replicates. Details of this are recorded in `Raw_data/HypoIII_all_drugs_encoded.csv` under the columns 'Dispensedwell', 'Dispensedrow', 'Dispensedcol'.
